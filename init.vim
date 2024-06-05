@@ -1,4 +1,3 @@
-
 call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline-themes'
@@ -42,8 +41,8 @@ nnoremap <c-x> :bp \|bd #<cr>
 
 " Telescope configuration
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fgi <cmd>Telescope git_files<cr>
+nnoremap <leader>flg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fg <cmd>Telescope git_files<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
@@ -54,6 +53,7 @@ lua require("treesitter")
 nnoremap <leader>gs <cmd>Git<cr>
 
 
+" Neovim configuration
 " set mouse=a
 set rnu
 set hidden
@@ -64,4 +64,7 @@ set shiftwidth=4
 set tabstop=4
 set encoding=utf8
 set clipboard=unnamedplus
+
+nnoremap <leader>bfn <cmd>bnext<cr>
+nnoremap <leader>bfp <cmd>bprev<cr>
 
